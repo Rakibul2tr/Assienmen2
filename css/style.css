@@ -31,7 +31,49 @@ main {
 }
 /* default css end */
 
+nav.menu-bar {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-auto-rows: 1fr;
+    padding-top: 30px;
+}
 
+.logo {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.logo h3{
+    margin-left: 10px;
+}
+.logo img{
+    width: 40.42px !important;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {margin-right: 15px;}
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    transition: .3s;
+    padding: 5px 8px;
+    border: 1px dashed #fff;
+}
+.menu ul li a:hover{
+    background:  #615499;
+}
 /*------------ 
 banner section
 --------------- */
@@ -279,20 +321,26 @@ media qurey
 ------------ */
 /* mobil device */
 @media only screen and (max-width:668px) {
-    .bennar,.pleyer-list,.club-story,.academy-info,.academy-topper-list {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+    .bennar, .pleyer-list, .club-story, .academy-info, .academy-topper-list {
+        grid-template-columns: 1fr; 
+         grid-template-rows: 1fr;
+    }
+    *{
+        box-sizing: content-box;
     }
     .bennar-left-text,.bennar-right-img {
         top: 0;
     }
     header{
-
+        width: 1040px;
         height: auto;
     }
     .pleyer-item ,.topper-item,.club-story {
         width: 100%;
-        padding-left: 100px;
+        padding-left: 10px;
+    }
+    .ply-img{
+        width: 100%;
     }
     .ply-descrip h3{
         font-size: 80px;
@@ -317,15 +365,13 @@ media qurey
         width: 600px;
         line-height: 44px;
     }
-    .club-story-video{
-
-    }
+   
     .topper-item {
         margin-top: 30px;
         margin-bottom: 30px;
         height: 680px;
     }
-    .topper-name{}
+    
 }
 
 
