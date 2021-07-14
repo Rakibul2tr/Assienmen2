@@ -26,7 +26,9 @@ button.watch-live-btn {
 button.watch-live-btn:hover{
     background: #b61a53;
 }
-
+main {
+    margin-top: 50px;
+}
 /* default css end */
 
 
@@ -38,6 +40,7 @@ header {
     background: rgb(45, 37, 160);
     height: 677px;
     margin-bottom: 70px;
+    margin: 0 auto;
 }
 .hero-section {
     z-index: 1;
@@ -46,7 +49,7 @@ header {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
 }
 .bennar-left-text {
     position: relative;
@@ -105,7 +108,7 @@ button.watch-live-btn a {
 }
 .ply-img img {
     width: 100%;
-    height: 256px;
+    /* height: 256px; */
 }
 .ply-descrip h3 {
     font-size: 28px;
@@ -269,3 +272,48 @@ Academy topper
     color: #000000;
     letter-spacing: 1px;
 }
+
+
+/*----------
+media qurey
+------------ */
+/* mobil device */
+@media only screen and (max-width:668px) {
+    .bennar,.pleyer-list,.club-story,.academy-info,.academy-topper-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .bennar-left-text,.bennar-right-img {
+        top: 0;
+    }
+    header{
+
+        height: auto;
+    }
+    .pleyer-item{
+        width: 100%;
+    }
+    .ply-descrip h3{
+        font-size: 80px;
+    }
+    .ply-descrip p {
+        font-size: 36px;
+        line-height: 70px;
+        margin-top: 20px;
+    }
+    .story-content{
+        top: 0;
+    }
+    .club-story-text{
+
+    }
+    .club-story-video{
+
+    }
+    .topper-item{
+        margin-top: 30px;
+    }
+    .topper-name{}
+}
+
+
