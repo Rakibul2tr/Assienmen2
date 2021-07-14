@@ -33,12 +33,12 @@ main {
 
 nav.menu-bar {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 400px 1fr;
     grid-auto-rows: 1fr;
     padding-top: 30px;
 }
 
-.logo {
+nav.menu-bar .logo {
     padding-left: 10px;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@ nav.menu-bar {
 .logo h3{
     margin-left: 10px;
 }
-.logo img{
+nav.menu-bar .logo img{
     width: 40.42px !important;
 }
 .menu ul {
@@ -283,7 +283,7 @@ Academy topper
     position: relative;
     top: 70px;
 }
-.logo img {
+.footer-box .logo img {
     width: 100%;
 }
 .social-icon {
