@@ -176,7 +176,7 @@ Academy aria
 .academy-info {
     display: grid;
     grid-template-columns: 1fr 400px;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     gap: 30px;
 }
 .playeer-thum img {
@@ -290,28 +290,40 @@ media qurey
 
         height: auto;
     }
-    .pleyer-item{
+    .pleyer-item ,.topper-item,.club-story {
         width: 100%;
+        padding-left: 50px;
     }
     .ply-descrip h3{
         font-size: 80px;
+        margin-top: 10px;
     }
     .ply-descrip p {
         font-size: 36px;
         line-height: 70px;
         margin-top: 20px;
     }
+    .club-section {
+        background: #061D48;
+        margin-top: 30px;
+        padding: 100px 0;
+        width: 1040px;
+    }
     .story-content{
         top: 0;
     }
-    .club-story-text{
-
+    .club-story-text {
+        height: 300px;
+        width: 600px;
+        line-height: 44px;
     }
     .club-story-video{
 
     }
-    .topper-item{
+    .topper-item {
         margin-top: 30px;
+        margin-bottom: 30px;
+        height: 680px;
     }
     .topper-name{}
 }
