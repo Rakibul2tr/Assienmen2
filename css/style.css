@@ -344,12 +344,13 @@ media qurey
     }
     .ply-descrip h3{
         font-size: 80px;
-        margin-top: 10px;
+        margin-top: 40px;
     }
     .ply-descrip p {
         font-size: 36px;
         line-height: 70px;
         margin-top: 20px;
+        padding-right: 70px;
     }
     .club-section {
         background: #061D48;
