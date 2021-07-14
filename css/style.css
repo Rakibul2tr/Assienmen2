@@ -18,9 +18,19 @@ button.watch-live-btn {
     height: 44px;
     background: #E02C6D;
     border: none;
+    cursor: pointer;
+    transition: .3s;
 }
+button.watch-live-btn:hover{
+    background: #b61a53;
+}
+
 /* default css end */
-/* banner section */
+
+
+/*------------ 
+banner section
+--------------- */
 header {
     width: 1440px;
     background: rgb(45, 37, 160);
@@ -58,13 +68,21 @@ button.watch-live-btn a {
     position: relative;
     top: 150px;
     width: 556px;
+    transition: transform 2s;
+    cursor: pointer;
+}
+.bennar .bennar-right-img:hover.bennar-right-img {
+    transform: scale(1.1) rotate(40deg);
 }
 .bennar-right-img img{
     width: 556px;
     z-index: 1;
 }
 
-/* player section */
+
+/*---------------
+ player section
+ --------------- */
 
 .pleyer-list{
     display: grid;
@@ -75,6 +93,13 @@ button.watch-live-btn a {
 .pleyer-item {
     padding: 10px;
     box-shadow: -1px 1px 11px 15px #f2f2f2;
+    overflow: hidden;
+    transition: transform 2s;
+    cursor: pointer;
+    display: block;
+}
+.pleyer-item:hover{
+    transform: scale(1.05);
 }
 .ply-img img {
     width: 100%;
@@ -93,11 +118,15 @@ button.watch-live-btn a {
     color: #6C6C6C;
     text-align: justify;
 }
-/* club story aria */
+
+
+/*-------------- 
+club story aria 
+----------------*/
 .club-section {
     background: #061D48;
     margin-top: 30px;
-    padding: 70px 0;
+    padding: 100px 0;
 }
 .club-story {
     display: grid;
@@ -105,7 +134,7 @@ button.watch-live-btn a {
     grid-template-rows: 1fr;
     gap: 30px;
 }
-.story-content {
+.story-content ,.academy-content{
     position: relative;
     top: 20px;
     padding: 10px;
@@ -122,12 +151,77 @@ button.watch-live-btn a {
     margin: 15px 0;
 }
 
-/* footer aria */
-.footer-box {
+
+/*------------- 
+Academy aria
+--------------- */
+.academy-section {
+    margin-top: 30px;
+    padding: 100px 0;
+    padding-bottom: 0;
+}
+.academy-info {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+.playeer-thum img {
+    width: 100%;
+}
+.academy-content{
+    color: #000;
+}
+.academy-content p {
+    padding: 10px 0;
+    line-height: 27px;
+    text-align: justify;
+}
+
+/*---------- 
+Academy topper
+-------------- */
+.academy-topper-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+.topper-item {
+    height: 370px;
+    padding: 10px;
+    box-shadow: -1px 3px 8px 2px #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: .5s
+}
+.topper-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #E02C6D;
+    opacity: .2;
+    display: none;
+}
+.topper-item:hover.topper-item::after{
+   display: block;
+}
+.topper-img img{
+    width: 100%;
+}
+
+/*-----------------
+ footer aria
+ ------------------ */
+ .footer-box {
     width: 485px;
     margin: auto;
     position: relative;
-    top: 150px;
+    top: 70px;
 }
 .logo img {
     width: 100%;
