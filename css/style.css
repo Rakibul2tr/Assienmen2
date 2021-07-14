@@ -1,0 +1,133 @@
+/* default css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 1050px;
+    margin: auto;
+}
+button.watch-live-btn {
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    border: none;
+}
+/* default css end */
+/* banner section */
+header {
+    width: 1440px;
+    background: rgb(45, 37, 160);
+    height: 677px;
+    margin-bottom: 70px;
+}
+.hero-section {
+    z-index: 1;
+}
+.bennar {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.bennar-left-text {
+    position: relative;
+    left: 156px;
+    top: 207px;
+    color: #fff;
+    width: 485px;
+}
+.bennar-left-text h1 {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+}
+button.watch-live-btn a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.bennar-right-img {
+    position: relative;
+    top: 150px;
+    width: 556px;
+}
+.bennar-right-img img{
+    width: 556px;
+    z-index: 1;
+}
+
+/* player section */
+
+.pleyer-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.pleyer-item {
+    padding: 10px;
+    box-shadow: -1px 1px 11px 15px #f2f2f2;
+}
+.ply-img img {
+    width: 100%;
+    height: 256px;
+}
+.ply-descrip h3 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #18191F;
+}
+.ply-descrip p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6C6C6C;
+    text-align: justify;
+}
+/* footer aria */
+.footer-box {
+    width: 485px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+.logo img {
+    width: 100%;
+}
+.social-icon {
+    text-align: center;
+}
+.social-icon i {
+    margin-right: 15px;
+    background: #E7E7E8;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #969BAB;
+    transition: .3s;
+}
+.social-icon i:hover{
+    background: #E02C6D;
+    color: #fff;
+}
+.copyright-text {
+    text-align: center;
+    padding: 20px;
+}
+.copyright-text p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 1px;
+}
