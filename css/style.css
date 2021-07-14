@@ -93,6 +93,35 @@ button.watch-live-btn a {
     color: #6C6C6C;
     text-align: justify;
 }
+/* club story aria */
+.club-section {
+    background: #061D48;
+    margin-top: 30px;
+    padding: 70px 0;
+}
+.club-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+.story-content {
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    color: #fff
+}
+.story-content h1 {
+    font-size: 50px;
+    margin: 0;
+    line-height: 44px;
+    font-weight: 500;
+}
+.story-content p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
 /* footer aria */
 .footer-box {
     width: 485px;
