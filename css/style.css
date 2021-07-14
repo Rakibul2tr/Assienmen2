@@ -162,6 +162,14 @@ Academy aria
     padding: 100px 0;
     padding-bottom: 0;
 }
+.academy-section .academy-title {
+    padding: 20px;
+    background: #E02C6D !important;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 5px;
+
+}
 .academy-info {
     display: grid;
     grid-template-columns: 1fr 400px;
@@ -215,6 +223,11 @@ Academy topper
 .topper-img img{
     width: 100%;
 }
+.topper-name h1 {
+    margin-top: 15px;
+}
+
+.topper-name span {padding: 5px;}
 
 /*-----------------
  footer aria
